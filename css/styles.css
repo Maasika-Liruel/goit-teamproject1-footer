@@ -39,16 +39,17 @@ button {
   }
 
 .header-logo {
-    font-family: Raleway;
+    font-family: "Raleway";
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--bright-color)
     }
 
 .web-logo {
-    color: var(--bright-color);
+    color: var(--main-color);
 }
 
 .header-list {
@@ -62,7 +63,7 @@ button {
 }
 
 .header-link {
-
+color:var(--main-color);
 }
 
 .header-link:hover,
@@ -177,12 +178,15 @@ color: var(--active-color);
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--main-color);
     
 }
 
 .team-list {}
 
-.team-item {}
+.team-item {
+    background-color: var(--white-color);
+}
 
 .team-img {}
 
@@ -208,14 +212,18 @@ color: var(--active-color);
 }
 
 .footer-logo {
-    font-family: Raleway;
+    font-family: "Raleway";
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--bright-color);
+    }
+
+ .studio-logo {
     color: var(--team-color);
-}
+ }   
 
 .footer-text {
     line-height: 1.5;
@@ -237,9 +245,11 @@ color: var(--active-color);
 }
 
 .btn-portfolio {
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
+    letter-spacing: 0.04em;
     color: var(--bright-color);
     background: var(--team-color);
     }
