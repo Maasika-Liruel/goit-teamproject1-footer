@@ -253,7 +253,7 @@ color: var(--active-color);
     text-align: center;
     color: var(--bright-color);
     background: var(--team-color);
-    border: 1px solid var(btn-color);
+    border: 1px solid var(--btn-color);
     border-radius: 4px;
     }
 
@@ -277,11 +277,11 @@ color: var(--active-color);
 
 .item-card {
     background: val(--white-color);
-    border: 1px solid var(btn-color);
+    border: 1px solid var(--btn-color);
 }
 
 .img-item {
-    
+
 }
 
 .card-title {
