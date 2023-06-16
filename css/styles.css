@@ -139,9 +139,16 @@ color: var(--active-color);
 
 .features-item {}
 
-.features-title {}
+.features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+}
 
 .features-text {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
@@ -262,7 +269,7 @@ color: var(--active-color);
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-    color: val(--white-color);
+    color: var(--white-color);
     background: var(--active-color);
     }
 
@@ -284,6 +291,7 @@ color: var(--active-color);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--main-color)
     
 }
 
