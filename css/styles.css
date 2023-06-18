@@ -53,9 +53,7 @@ button {
 }
 
 .header-list {
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    
 }
 
 .header-item {
@@ -63,7 +61,10 @@ button {
 }
 
 .header-link {
-color:var(--main-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--main-color);
 }
 
 .header-link:hover,
@@ -72,8 +73,6 @@ color:var(--main-color);
 }
 
 .contact {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     font-style: normal;
  }
 
@@ -85,6 +84,8 @@ color:var(--main-color);
     
 }
 .contact-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--dark-color);
 }
 
@@ -126,12 +127,8 @@ color: var(--active-color);
 
 /* Features styles */
 .features-section {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     
-    }
+}
 
 .features-list {
    
@@ -278,8 +275,7 @@ color: var(--active-color);
 }
 
 .item-card {
-    background: val(--white-color);
-    border: 1px solid var(--btn-color);
+    
 }
 
 .img-item {
@@ -300,12 +296,3 @@ color: var(--active-color);
     letter-spacing: 0.02em;
     color: var(--dark-color);
 }
-
-a {
-    text-decoration: none;
-}
-
-.list {
-    list-style-type: none;
-}
-
