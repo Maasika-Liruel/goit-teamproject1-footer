@@ -15,6 +15,10 @@ body {
     background-color: var(--white-color);
 }
 /* Reset */
+h1, h2, h3, h4, h5, h6, p {
+text-decoration: none;
+margin: 0;
+}
 .link {
     text-decoration: none;
     color:currentColor;
@@ -22,6 +26,8 @@ body {
 
 .list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 button {
