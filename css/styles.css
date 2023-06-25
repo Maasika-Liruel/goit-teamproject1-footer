@@ -19,6 +19,11 @@ h1, h2, h3, h4, h5, h6, p {
 text-decoration: none;
 margin: 0;
 }
+
+img {
+    display: block;
+}
+
 .link {
     text-decoration: none;
     color:currentColor;
@@ -36,8 +41,24 @@ button {
 }
 
 /* Header styles */
+
+.section {
+
+}
+
+.container {
+ width: 1158px;
+ margin: 0 auto;
+ padding-left: 15px;
+ padding-right: 15px;
+ outline: 2px solid red;
+ outline-offset: -2px;
+}
+
 .header {
     background: var(--white-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav {
@@ -106,6 +127,8 @@ color: var(--active-color);
 /* Order styles */
 .order-section {
     background: var(--main-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .title-section {
@@ -133,7 +156,8 @@ color: var(--active-color);
 
 /* Features styles */
 .features-section {
-    
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .features-list {
