@@ -73,9 +73,8 @@ button {
  }
 
 .header {
-    background: #e7e9fc;
-    padding: 24px 0;
-}
+    border-bottom: 1px solid #e7e9fc;
+    }
 
 .header-container {
     display: flex;
@@ -122,6 +121,8 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--main-color);
+    display: block;
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -175,7 +176,7 @@ color: var(--active-color);
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--white-color);
-        width: 496px;
+        max-width: 496px;
         margin: 0 auto;
         margin-bottom: 48px;
 }
@@ -187,7 +188,7 @@ color: var(--active-color);
     letter-spacing: 0.04em;
     color: var(--white-color);
     background: var(--bright-color);
-    min-width: 196px;
+    min-width: 169px;
     min-height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
@@ -205,13 +206,14 @@ color: var(--active-color);
 
 /* Features styles */
 .features-section {
-padding-top: 120px;
+   padding: 120px 0;
 }
 
 .features-list {
    display: flex;
    justify-content: space-between;
-   }
+   gap: 24px;
+}
 
 .features-item {
     width: calc((100% - 72px) / 4);
@@ -235,7 +237,7 @@ padding-top: 120px;
 
 /* Proposal styles */
 .proposal-section {
-    
+     padding-bottom: 120px;
 }
 
 .proposal-block {
@@ -261,7 +263,7 @@ padding-top: 120px;
 /* Team styles */
 .team-section {
     background: var(--team-color);
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .team-block {
@@ -272,8 +274,7 @@ padding-top: 120px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-color);
-    padding-top: 120px;
-    
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -300,7 +301,7 @@ padding-top: 120px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-color);
-    
+    margin-bottom: 8px;
 }
 
 .team-text {
