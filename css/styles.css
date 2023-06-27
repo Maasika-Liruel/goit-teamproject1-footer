@@ -157,11 +157,6 @@ color: var(--active-color);
 /* Main block */
 .main {}
 
-.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 /* Order styles */
 .order-section {
     background: var(--main-color);
@@ -335,12 +330,10 @@ color: var(--active-color);
 
 .footer-text {
     max-width: 264px;
-    
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--team-color);
-    padding-top: 16px;
-}
+    }
 
 /* Portfolio styles */
 .portfolio-section {
