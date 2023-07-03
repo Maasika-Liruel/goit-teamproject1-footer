@@ -70,6 +70,7 @@ button {
  margin: 0 auto;
  padding-left: 15px;
  padding-right: 15px;
+
  }
 
 .header {
@@ -157,11 +158,58 @@ color: var(--active-color);
 /* Main block */
 .main {}
 
+/* .backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+   */
+/* .backdrop {
+    position: fixed;
+    top: 80;
+    left: 516;
+    width: 408px;
+    height: 584px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    visibility: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+
+/*
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    min-width: 250px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+} */
+
+
 /* Order styles */
 .order-section {
+    max-width: 1440px;
+    margin: 0 auto;
     background: var(--main-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.4)), url(../images/order/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title-section {
@@ -287,6 +335,9 @@ color: var(--active-color);
 
 .img-title-block {
     padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
