@@ -129,6 +129,7 @@ button {
 .header-link:hover,
 .header-link:focus {
     color: var(--active-color);
+
 }
 
 .contact {
@@ -198,7 +199,6 @@ color: var(--active-color);
 }
 } */
 
-
 /* Order styles */
 .order-section {
     max-width: 1440px;
@@ -260,6 +260,17 @@ color: var(--active-color);
 
 .features-item {
     width: calc((100% - 72px) / 4);
+}
+
+.features-list-block {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: var(--team-color);
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-title {
@@ -355,6 +366,29 @@ color: var(--active-color);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+}
+
+/* Customers styles */
+.customers {
+    width: 1440px;
+    height: 440px;
+}
+
+.customers-block {
+        color: var(--main-color);
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+}
+
+.customers-item {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 /* Footer styles */
