@@ -6,6 +6,7 @@
     --dark-color: #434455;
     --team-color: #F4F4FD;
     --btn-color: #E7E9FC;
+    --light-color: #8E8F99;
 
 } 
 
@@ -213,15 +214,15 @@ color: var(--active-color);
 }
 
 .title-section {
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: var(--white-color);
-        max-width: 496px;
-        margin: 0 auto;
-        margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -369,26 +370,60 @@ color: var(--active-color);
 }
 
 /* Customers styles */
-.customers {
-    width: 1440px;
-    height: 440px;
+.customers-section {
+    padding: 120px 0;
 }
 
 .customers-block {
         color: var(--main-color);
         text-align: center;
         font-size: 36px;
-        font-style: normal;
         font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0.72px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 72px;
+        
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 .customers-item {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 24px;
+    /* width: calc((100% - 120px) / 6); */
+}
+
+.customers-item-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--light-color);
+}
+
+
+.customers-item-block:hover,
+.customers-item-block:focus {
+    color: var(--active-color);
+    border-color: 1px solid var(--active-color);
+}
+
+.customers-item-icon:hover,
+.customers-item-icon:focus {
+    color: var(--active-color);
+    border-color: 1px solid var(--active-color);
+}
+
+.customers-item-icon {
+    color: var(--light-color);
+    fill: currentColor;
 }
 
 /* Footer styles */
