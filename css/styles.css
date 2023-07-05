@@ -232,7 +232,7 @@ color: var(--active-color);
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-color);
-    background: var(--bright-color);
+    background-color: var(--bright-color);
     min-width: 169px;
     min-height: 56px;
     padding: 16px 32px;
@@ -594,11 +594,6 @@ color: var(--active-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal:hover,
-.modal:focus {
-    fill: var(--white-color);
-} */
-
 .modal-link {
     display: flex;
     justify-content: center;
@@ -628,6 +623,11 @@ color: var(--active-color);
     color: var(--main-color);
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover, 
+.close-icon:focus {
+    fill: var(--white-color);
 }
 
 
