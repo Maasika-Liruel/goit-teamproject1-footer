@@ -201,61 +201,6 @@ color: var(--active-color);
 /* Main block */
 .main {}
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-   
-.backdrop {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    background-color: rgba(46, 47, 66, 0.4)
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
-    top: 50%;
-    left: 50%;
-    width: 408px;
-    min-height: 584px;
-    position: absolute;
-    transform: translate(-50%, -50%) scale(1);
-    border-radius: 4px;
-    background: var(--dairy-color);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    right: 24px;
-    border-radius: 50%;
-    background-color: var(--btn-color);
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-icon {
-        width: 8px;
-        height: 8px;
-        color: var(--main-color);
-        fill: currentColor;
-    
-}
-
 /* Order styles */
 .order-section {
     max-width: 1440px;
@@ -281,7 +226,7 @@ color: var(--active-color);
     margin-bottom: 48px;
 }
 
-.button {
+.order-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -297,7 +242,7 @@ color: var(--active-color);
     margin: 0 auto;
     align-items: flex-start;
     gap: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -399,9 +344,7 @@ color: var(--active-color);
     background-color: var(--white-color);
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
-    border-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-img {}
@@ -617,7 +560,75 @@ color: var(--active-color);
     fill: currentColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-     
+
+/* Modal styles */
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height: 584px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 4px;
+    background: var(--dairy-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal:hover,
+.modal:focus {
+    fill: var(--white-color);
+}
+
+.modal-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-link:hover,
+.modal.link:focus {
+    background-color: var(--active-color);
+    border: none;
+}
+
+.close-icon {
+    width: 8px;
+    height: 8px;
+    color: var(--main-color);
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* Portfolio styles */
 .portfolio-section {
     padding-top: 96px;
