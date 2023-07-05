@@ -263,7 +263,7 @@ color: var(--active-color);
     background: var(--main-color);
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
