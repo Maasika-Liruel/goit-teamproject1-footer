@@ -382,8 +382,8 @@ color: var(--active-color);
 } 
 
 .team-media-item {
-    /* display: flex; */
-    /* justify-content: center;
+    /* display: flex; 
+    justify-content: center;
     align-items: center;
     gap: 24px; */
     width: 40px;
@@ -395,6 +395,9 @@ color: var(--active-color);
 .team-media-link {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
     border-radius: 50%;
     background-color: var(--bright-color);
@@ -701,9 +704,9 @@ gap: 48px 24px;
 }
 
 .item-card:hover {
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);  */
+        0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .cadr-link {
