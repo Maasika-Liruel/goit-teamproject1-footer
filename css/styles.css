@@ -658,7 +658,8 @@ form {
     margin: 0 24px;
 }
 
-input {
+
+input:not([type="checkbox"]) {
     display: block;
     width: 360px;
     height: 40px;
@@ -671,8 +672,41 @@ input {
 
 .form-input {}
 
+/* .order-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--bright-color);
+    min-width: 169px;
+    min-height: 56px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    align-items: flex-start;
+    gap: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.button:hover,
+.button:focus {
+    background: var(--active-color);
+} */
 
+/* 
+.send-button {
+    display: inline-flex;
+        padding: 16px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        Copy border-radius: 4px;
+        background: var(--iris, #4D5AE5);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+*/
 
 /* Portfolio styles */
 /* bottoms */
