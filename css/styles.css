@@ -607,6 +607,7 @@ button {
     top: 50%;
     left: 50%;
     width: 408px;
+    padding: 72px 24px 24px;
     min-height: 584px;
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
@@ -649,16 +650,11 @@ button {
     fill: var(--white-color);
 }
 
-/* User`s form */
-form {
-    padding-top: 74px;
-}
+.order-form {}
 
 .order-title {
-    display: flex;
+    display: block;
     width: 360px;
-    flex-direction: column;
-    flex-shrink: 0;
     color: var(--main-color);
     text-align: center;
     font-style: normal;
@@ -666,35 +662,71 @@ form {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    margin: 0 24px 16px 24px;
+    margin-bottom: 16px; 
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
 }
 
 /* Small Text */
-.form-label {
-    display: flex;
-    /* width: 58px; */
-    flex-direction: column;
-    flex-shrink: 0;
+.form-label-title {
+    display: block;
+    padding-bottom: 4px;
     color: var(--light-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.48px;
-    margin: 0 24px;
+     
 }
 
-
-input:not([type="checkbox"]) {
+.input-name, .input-tel, .input-email 
+ {
     display: block;
     width: 360px;
     height: 40px;
-    /* margin: 0 24px; */
-    margin-bottom: 20px;
+    outline: transparent;
     border-radius: 4px;
-    border: 1px solid var(--bright-color);
-    /* border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40)); */
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4)); 
+    padding: 11px 0;
+    margin-bottom: 8px; 
 }
+
+.input-name:focus,
+.input-tel:focus,
+.input-email:focus {
+    border: 1px solid var(--bright-color);
+}
+
+.input-comment {
+    display: block;
+    width: 360px;
+    height: 120px;
+    outline: transparent;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.input-comment:focus {
+    border: 1px solid var(--bright-color);
+}
+/* .placeholder {
+    text-align: ;
+    padding-top: 8px;
+    padding-left: 16px;
+    color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+} */
 
 .agreement {
     margin-left: 24px;
