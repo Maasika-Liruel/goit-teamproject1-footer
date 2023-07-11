@@ -718,7 +718,6 @@ button {
 .input-comment {
     display: block;
     width: 360px;
-    /* height: 120px; */
     outline: transparent;
     margin-bottom: 16px;
     border-radius: 4px;
@@ -748,7 +747,25 @@ textarea {
     letter-spacing: 0.48px;
 }  
 
+/* agreement block */
 .form-agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.input-agreement {}
+
+.form-check-icon {}
+
+.check-icon {}
+
+.text-agreement {}
+
+.agreement-link {}
+
+/* .form-agreement {
     position: relative;
     display: block;
     margin-bottom: 24px;
@@ -758,9 +775,9 @@ textarea {
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.48px;
-}
+} */
 
-.agreement {
+.input-agreement {
     margin-right: 8px;
     width: 16px;
     height: 16px;

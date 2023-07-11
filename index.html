@@ -404,14 +404,16 @@
             </label>
             <label class="form-label">
                 <span class="form-label-title">Comment</span>
-            <textarea class="input-comment" name="user_inf_comment" rows="5" placeholder="Text input"></textarea>
+                <textarea class="input-comment" name="user_inf_comment" rows="5" placeholder="Text input"></textarea>
             </label>
             <label class="form-agreement">
-                <input class="agreement" type="text" name="accept_pp" />
-                <!-- <svg class="check-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-click"></use>
-                </svg> -->
-                I accept the terms and conditions of the <a class="agreement-link" href="">Privacy Policy</a>
+                <input class="input-agreement" type="checkbox" name="accept_pp" />
+                <span class="form-check-icon">
+                    <svg class="check-icon" width="10" height="8">
+                    <use href="./images/icons.svg#check-icon"></use>
+                </svg> 
+                </span>
+                <span class="text-agreement">I accept the terms and conditions of the <a class="agreement-link" href="">Privacy Policy</a></span>
             </label>
             <button type="submit" class="button send-button">Send</button>
         </form>
