@@ -543,13 +543,10 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .footer-media-list .footer-media-link:hover,
 .footer-media-list .footer-media-link:focus {
     background-color: var(--green-color);
 }
-
-
 
 .footer-media-icon {
     width: 24px;
@@ -561,7 +558,6 @@ button {
 
 .footer-subscribe {
     margin-left: 80px;
-    /* display: block; */
 }
 
 .footer-subscribe-text {
@@ -574,15 +570,60 @@ button {
     margin-bottom: 16px;
 }
 
-.subscribe-email {
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-label {}
+
+.footer-subscribe-email {
     width: 264px;
     height: 40px;
+    padding: 8px 16px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid var(--white-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background: var(--main-color);
+    background-color: transparent;
 }
+
+.footer-subscribe-email:focus {
+    /* border-color: ; */
+}
+
+.footer-subscribe-email::placeholder {
+    color: var(--white-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+}
+ 
+.footer-subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    min-width: 165px;
+    min-height: 40px;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    color: var(--white-color);
+    background-color: var(--bright-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-plane {}
 
 /* Modal styles */
 .backdrop.is-hidden {
@@ -797,7 +838,6 @@ textarea {
 
 .send-button {
     display: block;
-    
     align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
