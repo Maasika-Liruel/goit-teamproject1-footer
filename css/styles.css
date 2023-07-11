@@ -736,9 +736,6 @@ textarea {
 }
 
 .input-comment::placeholder {
-/*  position: absolute;
-    top: 8px;
-    left: 16px;*/
     color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     font-size: 12px;
     font-style: normal;
@@ -784,99 +781,41 @@ textarea {
 }
 
 
-.text-agreement {}
-
-.agreement-link {}
-
-/* .form-agreement {
-    position: relative;
-    display: block;
-    margin-bottom: 24px;
+.text-agreement {
     color: var(--light-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.48px;
-} */
-
-/* .input-agreement {
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    border: 1px solid var(rgba(46, 47, 66, 0.40));
-} */
+}
 
 .agreement-link {
     text-decoration-line: underline;
     color: var(--bright-color);
 }
 
-/* .check-icon {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-} */
-
-/* .check-icon:focus {
-    fill: var(--active-color);
-
-
-} */
-
-.form-input {}
-
-/* .order-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white-color);
-    background-color: var(--bright-color);
+.send-button {
+    display: block;
+    
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
     min-width: 169px;
     min-height: 56px;
     padding: 16px 32px;
-    border-radius: 4px;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    align-items: flex-start;
-    gap: 10px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover,
-.button:focus {
-    background: var(--active-color);
-} */
-
- 
-.send-button {
-    display: flex;
-    width: 169px;
-    height: 56px;
-    padding: 16px 32px;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--white-color);
     text-align: center;
-        /* Button Text */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.64px;
-    /* display: inline-flex; */
-    
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background: var(--bright-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-color);
+    background-color: var(--bright-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
