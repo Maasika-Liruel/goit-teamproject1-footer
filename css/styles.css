@@ -721,12 +721,10 @@ button {
 .form-label-title {
     display: block;
     position: relative;
-    padding-bottom: 4px;
     color: var(--light-color);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14px;
     letter-spacing: 0.48px;
     line-height: 1.17;
     margin-bottom: 4px;
@@ -746,7 +744,6 @@ button {
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4)); 
     padding: 11px 38px;
-    margin-bottom: 8px;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -849,8 +846,7 @@ textarea {
 
 .check-icon {
     opacity: 0;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .input-agreement:checked + .form-agreement > .form-check-icon > .check-icon {
     opacity: 1;
