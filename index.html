@@ -381,42 +381,51 @@
                 <use href="./images/icons.svg#close"></use>
             </svg>
         </button>
-        <form class="order-form" name="user_inform" novalidate autocomplete="on">
-            <p class="order-title">Leave your contacts and we will call you back</p>
-            <label class="form-label">
-                <span class="form-label-title">Name</span>
-                <input class="form-input" type="text" name="user_inf_name" />
-                <svg class="form-label-icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-            </label>
-            <label class="form-label">
-                <span class="form-label-title">Phone</span>
-                <input class="form-input" type="tel" name="user_inf_tel" />
-                <svg class="form-label-icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-            </label>
-            <label class="form-label">
-                <span class="form-label-title">Email</span>
-                <input class="form-input" type="email" name="user_inf_email" />
-                <svg class="form-label-icon" width="18" height="24">
-                    <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-            </label>
-            <label class="form-label">
-                <span class="form-label-title">Comment</span>
+        <p class="order-title">Leave your contacts and we will call you back</p>
+<!-- Input users form -->
+        <form class="order-form" name="user_information" novalidate autocomplete="on">
+            <div class="form-label">
+                <label class="form-label-title">Name</label>
+                <div class="form-label-block">
+                    <input class="form-input" type="text" name="user_inf_name" />
+                    <svg class="form-label-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-label">
+                <label class="form-label-title">Phone</label>
+                <div class="form-label-block">
+                    <input class="form-input" type="tel" name="user_inf_tel" />
+                    <svg class="form-label-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-label">
+                <label class="form-label-title">Email</label>
+                <div class="form-label-block">
+                    <input class="form-input" type="email" name="user_inf_email" />
+                    <svg class="form-label-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-label-comment">
+                <label class="form-label-title">Comment</label>
                 <textarea class="input-comment" name="user_inf_comment" rows="5" placeholder="Text input"></textarea>
-            </label>
-            <label class="form-agreement">
-                <input class="input-agreement visually-hidden" type="checkbox" name="accept_pp" />
-                <span class="form-check-icon">
-                    <svg class="check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#check-icon"></use>
-                </svg> 
-                </span>
-                <span class="text-agreement">I accept the terms and conditions of the <a class="agreement-link" href="">Privacy Policy</a></span>
-            </label>
+            </div>
+            <div class="agreement">
+                <input class="input-agreement visually-hidden" value="true" id="user-privacy" type="checkbox" name="accept_pp" />
+                <label class="form-agreement" for="user-privacy">
+                    <span class="form-check-icon">
+                        <svg class="check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#check-icon"></use>
+                        </svg> 
+                    </span>
+                I accept the terms and conditions of the <a class="agreement-link" href="">Privacy Policy</a>
+                </label>
+            </div>
             <button type="submit" class="button send-button">Send</button>
         </form>
     </div>
