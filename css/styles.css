@@ -276,7 +276,7 @@ button {
     background: var(--main-color);
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name1@1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -754,10 +754,9 @@ button {
 .footer {
     background: var(--main-color);
     padding: 96px 0;
-    text-align: center;
     }
 
-    /* desktop */
+/* desktop */
 @media only screen and (min-width: 1158px) {
     .footer {
     padding: 100px 0;
@@ -766,12 +765,20 @@ button {
 
 /* mobile */
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    text-align: center;
 }
 
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157.97px) {
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0 108px;
+  }
+}
 
+/* desktop */
 @media only screen and (min-width: 1158px) {
   .footer-container {
       display: flex;
@@ -779,10 +786,26 @@ button {
   } 
 }
 
+/* mobile */
+.left-footer {
+    display: block;
+    padding-bottom: 72px;
+   }
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .left-footer {
+    padding-right: 24px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1158px) {
 .left-footer {
     margin-right: 120px;
-    display: block;
-} 
+    padding-bottom: 0;
+    padding-right: 0;
+    }
+}
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -793,6 +816,8 @@ button {
     text-transform: uppercase;
     color: var(--bright-color);
     display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 16px;
         }
 
@@ -800,12 +825,29 @@ button {
     color: var(--team-color);
  }   
 
+ /* mobile */
 .footer-text {
-    max-width: 264px;
+    max-width: 268px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--team-color);
     }
+
+    /* tablet and desktop */
+@media only screen and (min-width: 768px) {
+    .footer-text {
+        max-width: 264px;
+  }
+}
+
+    /* mobile */
+.footer-media {
+    padding-bottom: 72px;
+}
+
 
 .footer-social {
     color: var(--white, #FFF);
@@ -817,8 +859,10 @@ button {
     margin-bottom: 16px;
 }
 
+/* mobile */
 .footer-media-list {
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-shrink: 0;
     align-self: flex-end;
@@ -857,9 +901,18 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* mobile */
 .footer-subscribe {
-    margin-left: 80px;
+    
 }
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+    .footer-subscribe {
+        margin-left: 80px;
+    }
+}
+
 
 .footer-subscribe-text {
     color: var(--white-color);
@@ -871,15 +924,26 @@ button {
     margin-bottom: 16px;
 }
 
+/* mobile */
 .footer-subscribe-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
-.footer-subscribe-label {}
+/* tablet and desktop */
+@media only screen and (min-width: 768px) {
+.footer-subscribe-form {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-subscribe-label {
+    width: 100%;
+}
 
 .footer-subscribe-email {
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding: 8px 16px;
     flex-shrink: 0;
@@ -894,8 +958,11 @@ button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-subscribe-email:focus {
-    /* border-color: ; */
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-subscribe-email {
+    width: 264px;
+  }
 }
 
 .footer-subscribe-email::placeholder {
@@ -911,7 +978,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 16px; */
     border-radius: 4px;
     border: none;
     margin: 0 auto;
