@@ -101,9 +101,8 @@ button {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding-top: 24px;
-    padding-bottom: 22px;
-    }
+}
+
 
 .header-container {
     display: flex;
@@ -131,10 +130,6 @@ button {
 .web-logo {
     color: var(--main-color);
 }
-
-/* .menu-toggle-icon {
-    stroke: var(--main-color);
-} */
 
 .header-list {
     display: flex;
@@ -164,6 +159,8 @@ button {
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .header-link:hover,
 .header-link:focus {
@@ -214,16 +211,46 @@ button {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .contact-list:not(:last-child) {
+        margin-bottom: 24px;
+  }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .contact-item, .contact-link {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        color: var(--dark-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+
+    .contact-item:focus,
+    .contact-link:focus {
+            color: var(--active-color);
+}
+}
+
+@media only screen and (min-width: 1158px) {
 .contact-list {
     display: flex;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
 }
 
 .contact-item {
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
@@ -233,6 +260,7 @@ button {
 .contact-link:hover,
 .contact-link:focus {
     color: var(--active-color);
+}
 }
 
 /* Main block */
@@ -396,6 +424,12 @@ button {
 /* Proposal styles */
 .proposal-section {
      padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 1157px) {
+    .proposal-section {
+        display: none;
+    }
 }
 
 .proposal-block {
@@ -1179,8 +1213,6 @@ gap: 48px 24px;
     fill: var(--white-color);
 }
 
-
-
 .mobile-menu {
     width: fit-content;
     margin-bottom: auto;
@@ -1215,23 +1247,23 @@ gap: 48px 24px;
     padding-bottom: 40px;
 }
 
-.mobile-contact-link {
+.mobile-contact-tel {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--bright-color);
+}
+
+.mobile-contact-address {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--dark-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-contact-link:focus {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    color: var(--bright-color);
 }
 
 .mobile-media-list {
