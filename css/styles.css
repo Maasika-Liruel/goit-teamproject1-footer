@@ -270,10 +270,12 @@ button {
 /* Order styles */
 /* mobile */
 .order-section {
-    max-width: 428px;
+    max-width: 1440px;
     margin: 0 auto;
     background: var(--main-color);
     padding-top: 112px;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob@1x.jpg);
     background-repeat: no-repeat;
@@ -281,17 +283,9 @@ button {
     background-size: cover;
 }
 
-/* tablet */
-@media only screen and (min-width: 768px) {
-   .order-section {
-   max-width: 768px;
-  }
-}
-
 /* desktop */
 @media only screen and (min-width: 1158px) {
    .order-section {
-    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
