@@ -137,7 +137,7 @@ button {
     gap: 40px;
 }
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .header-list {
         display: none;
   }
@@ -206,14 +206,14 @@ button {
  }
 
  /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .contact {
         display: none;
     }
 }
 
 /* tablet */
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
     .contact-list:not(:last-child) {
         margin-bottom: 24px;
   }
@@ -270,34 +270,96 @@ button {
 .main {}
 
 /* Order styles */
+/* mobile */
 .order-section {
-    max-width: 1440px;
+    max-width: 428px;
     margin: 0 auto;
     background: var(--main-color);
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-desk@1x.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .order-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-desk@2x.jpg);
+/* tablet */
+@media only screen and (min-width: 768px) {
+   .order-section {
+    max-width: 768px;
   }
 }
 
+/* desktop */
+@media only screen and (min-width: 1158px) {
+   .order-section {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+
+/* Retina screen */
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .order-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 429px) {
+    .order-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-tab@1x.jpg);
+    }
+
+ @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+     .order-section {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-tab@2x.jpg);
+     }
+ }
+}
+
+@media only screen and (min-width: 769px) {
+    .order-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-desk@1x.jpg);
+    }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .order-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-desk@2x.jpg);
+    }
+}
+}
+
+/* mobile */
 .title-section {
     font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--white-color);
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+.title-section {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--white-color);
     max-width: 496px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+    .title-section {
+        margin-bottom: 48px;
+}
 }
 
 .order-button {
@@ -337,7 +399,7 @@ button {
 }
 
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
     .features-item:not(:last-child) {
         margin-bottom: 72px;
     }
@@ -376,7 +438,7 @@ button {
 }
 
 /* mobile and tablet */
-@media only screen and (max-width: 1157px) {
+@media only screen and (max-width: 1157.98px) {
     .features-list-icon {
         display: none;
     }
@@ -449,7 +511,7 @@ button {
 }
 
 /* mobel and tablet */
-@media only screen and (max-width: 1157px) {
+@media only screen and (max-width: 1157.98px) {
     .proposal-section {
         display: none;
     }
@@ -551,7 +613,6 @@ button {
 
 /* mobile */
 .team-item {
-    /* flex-basis: 100%; */
     max-width: 264px;
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
