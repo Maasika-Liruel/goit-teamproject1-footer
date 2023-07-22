@@ -75,8 +75,6 @@ button {
     margin-left: auto;
     margin-right: auto;
 
- outline: 2px solid red;
- outline-offset: -2px;
  }
 
  /* Tablet screen */
@@ -286,7 +284,7 @@ button {
 /* tablet */
 @media only screen and (min-width: 768px) {
    .order-section {
-    max-width: 768px;
+   max-width: 768px;
   }
 }
 
@@ -1088,8 +1086,8 @@ button {
 .modal {
     top: 50%;
     left: 50%;
-    width: 408px;
-    padding: 72px 24px 24px;
+    width: 100%;
+    padding: 72px 16px 24px 16px;
     min-height: 584px;
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
@@ -1097,6 +1095,21 @@ button {
     background: var(--dairy-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* mobile */
+@media only screen and (min-width: 428px) {
+   .modal {
+        width: 392px;
+  }
+}
+
+/* tablet and desktop */
+@media only screen and (min-width: 768px) {
+.modal {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
 }
 
 .modal-button {
@@ -1151,7 +1164,7 @@ button {
     margin-bottom: 8px;
 }
 
-/* Small Text */
+/* small text */
 .form-label-title {
     display: block;
     position: relative;
@@ -1166,7 +1179,6 @@ button {
 
 .form-label-block {
     position: relative;
-    
 }
 
 .form-input {
