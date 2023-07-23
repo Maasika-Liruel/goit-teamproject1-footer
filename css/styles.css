@@ -549,6 +549,13 @@ button {
     padding-bottom: 96px;
 }
 
+/* tablet */
+/* @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+   .team-container .container, .customers-contanier .container, .footer-container .container {
+        max-width: 584px;
+  }
+} */
+
 /* desktop */
 @media only screen and (min-width: 1158px) {
     .team-section {
@@ -556,28 +563,6 @@ button {
         padding-bottom: 120px;
   }
 }
-
-/* mobile */
-/* .container.team-container {
-    padding-right: 82px;
-    padding-left: 82px;
-} */
-
-/* tablet */
-/* @media only screen and (min-width: 768px) {
-    .container.team-container {
-        padding-right: 108px;
-        padding-left: 108px;
-    }
-} */
-
-/* desktop */
-/* @media only screen and (min-width: 1158px) {
-    .container.team-container {
-       padding-right: 15px;
-        padding-left: 15px;
-    }
-} */
 
 .team-block {
     font-weight: 700;
