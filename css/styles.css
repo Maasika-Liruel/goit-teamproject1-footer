@@ -110,14 +110,16 @@ button {
     justify-content: space-between;
 }
 
+/* mobile */
 .header-nav {
     display: flex;
     align-items: center;
-    
-  }
+}
 
+/* mobile */
 .header-logo {
-    margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -127,6 +129,14 @@ button {
     color: var(--bright-color)
     }
 
+/* tablet and desktop */
+@media only screen and (min-width: 768px) {
+    .header-logo {
+        margin-right: 120px;
+        
+  }
+}
+    
 .web-logo {
     color: var(--main-color);
 }
@@ -698,13 +708,15 @@ button {
 /* Customers styles */
 /* mobile */
 .customers-section {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 /* desktop */
 @media only screen and (min-width: 1158px) {
   .customers-section {
-      padding: 120px 0;
+      padding-top: 120px;
+      padding-bottom: 120px;
   } 
 }
 
@@ -716,20 +728,18 @@ button {
 
 /* tablet */
 @media only screen and (min-width: 768px) {
-    .customers-contanier {
+    /* .customers-contanier {
         padding-right: 108px;
         padding-left: 108px;
-    }
+    } */
 }
 
 /* desktop */
 @media only screen and (min-width: 1158px) {
-    .customers-contanier {
-        /* padding-right: 156px;
-        padding-left: 156px; */
+    /* .customers-contanier {
         padding-right: 0;
         padding-left: 0;
-    }
+    } */
 }
 
 .customers-block {
@@ -841,6 +851,7 @@ button {
     flex-wrap: wrap;
     text-align: left;
     padding: 0 108px;
+    gap: 72px 24px;
   }
 }
 
@@ -856,13 +867,13 @@ button {
 /* mobile */
 .left-footer {
     display: block;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
    }
 
 /* tablet */
 @media only screen and (min-width: 768px) {
     .left-footer {
-    padding-right: 24px;
+    margin-bottom: 0;
   }
 }
 /* desktop */
@@ -912,10 +923,15 @@ button {
 
     /* mobile */
 .footer-media {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
-
+/* tablet */
+@media only screen and (min-width: 768px) {
+   .footer-media {
+        margin-bottom: 0;
+  }
+}
 .footer-social {
     color: var(--white, #FFF);
     font-size: 16px;
