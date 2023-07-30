@@ -68,9 +68,9 @@ button {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-
+/* 
     outline: 2px solid red;
-    outline-offset: -2px;
+    outline-offset: -2px; */
  }
 
  /* Tablet screen */
@@ -104,14 +104,33 @@ button {
 
 .footer-container {}
 
-.container {}
+/* mobile */
+.footer-line {
+    width: 335px;
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.2);
+    margin: 0 auto;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-line {
+        width: 704px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+    .footer-line {
+        width: 1216px;
+    }
+}
 
 /* mobile */
 .footer-main {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 40px;
 }
 
@@ -133,7 +152,10 @@ button {
 
 .footer-logo {}
 
-.footer-logo-icon {}
+.footer-logo-icon {
+    /* fill: var(--color-light-green); */
+    color: var(--color-light-green);
+}
 
 /* mobile */
 .footer-logo-text {
@@ -191,9 +213,7 @@ button {
     text-transform: uppercase;
 }
 
-.footer-media {
-   
-}
+.footer-media {}
 
 .footer-media-social {
     color: var(--color-white);
@@ -211,9 +231,7 @@ button {
     gap: 14px;
 }
 
-.footer-media-item {
-       
-}
+.footer-media-item {}
 
 .footer-media-link {
     width: 32px;
@@ -232,8 +250,8 @@ button {
 .footer-media-link:hover {
 /* border: 1px solid var(--color-linear-green);
      fill: var(--color-linear-green); */
-    border: 1px solid yellow;
-    fill: red;
+    border: 1px solid var(--color-light-green);
+    fill: var(--color-light-green);
 }
 
 /* tablet */
