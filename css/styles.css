@@ -128,7 +128,66 @@ button {
   }
 }
 
-.footer-container {}
+.footer-container {
+    position: relative;
+}
+
+/* mobile */
+.footer-container:before,
+.footer-container:after {
+    content: "";
+    position: absolute;
+    border-radius: 420px;
+    filter: blur(100px);
+    transform: rotate(-46deg);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-container:before,
+    .footer-container:after {
+        border-radius: 419px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+    .footer-container:before,
+    .footer-container:after {
+        border-radius: 415px;
+        transform: rotate(-45deg);
+    }
+}
+
+/* mobile */
+.footer-container:before {
+    top: 259px;
+    left: 6px;
+    width: 420px;
+    height: 420px;
+    opacity: 0.60;
+    background: var(--hero-clients-circles-border);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+    .footer-container:before {
+        top: 264px;
+        left: 220px;
+        width: 419px;
+        height: 419px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+    .footer-container:before {
+        top: 257px;
+        left: 225px;
+        width: 415px;
+        height: 415px;
+    }
+}
 
 /* mobile */
 .footer-line {
@@ -205,69 +264,7 @@ button {
     }
 }
 
-.footer-nav {
-    position: relative;
-}
-
-.footer-nav:before,
-.footer-nav:after {
-    content: "";
-    position: absolute;
-    border-radius: 420px;
-    filter: blur(100px);
-    transform: rotate(-45deg);
-
-    /* width: 420px;
-    height: 420px;
-    flex-shrink: 0;
-    opacity: 0.60;
-    background: var(--hero-clients-circles-border); */
-}
-
-/* mobile */
-.footer-nav:before {
-    top: 226%;
-    left: 40%;
-    width: 420px;
-    height: 420px;
-    flex-shrink: 0;
-    opacity: 0.60;
-    background: var(--hero-clients-circles-border);
-}
-
 .footer-menu {}
-
-/* 
-@media .footer-navigation:before {
-    top: 102%;
-    left: -81%;
-}
-
-@media .footer-navigation:before {
-    width: 150px;
-    height: 150px;
-}
-
-.footer-navigation:before {
-    top: 226%;
-    left: 42%;
-    width: 200px;
-    height: 200px;
-    background: rgba(147, 171, 174, .6);
-}
-
-.footer-navigation:before,
-.footer-navigation:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    transform: rotate(-45deg);
-}
-*/
-
-
-
 
 /* mobile */
 .footer-menu-list {
