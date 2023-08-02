@@ -118,6 +118,7 @@ button {
  /* mobile */
 .footer {
     padding-bottom: 14px;
+    overflow: hidden;
 }
 
 /* tablet */
@@ -205,14 +206,33 @@ button {
 }
 
 .footer-nav {
+    position: relative;
+}
+
+.footer-nav:before,
+.footer-nav:after {
+    content: "";
+    position: absolute;
+    border-radius: 420px;
+    filter: blur(100px);
+    transform: rotate(-45deg);
+
+    /* width: 420px;
+    height: 420px;
+    flex-shrink: 0;
+    opacity: 0.60;
+    background: var(--hero-clients-circles-border); */
+}
+
+/* mobile */
+.footer-nav:before {
+    top: 226%;
+    left: 40%;
     width: 420px;
     height: 420px;
-    transform: rotate(-45.408deg);
     flex-shrink: 0;
-    border-radius: 420px;
-    opacity: 0.6000000238418579;
+    opacity: 0.60;
     background: var(--hero-clients-circles-border);
-    filter: blur(100px);
 }
 
 .footer-menu {}
